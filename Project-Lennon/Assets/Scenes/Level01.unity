@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.31309065, g: 0.29379535, b: 0.5141185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10579,7 +10579,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1435895476}
-  m_LocalRotation: {x: -0.11118668, y: 0.852493, z: -0.20205297, w: -0.4691139}
+  m_LocalRotation: {x: -0.11118668, y: 0.852493, z: -0.20205298, w: -0.4691139}
   m_LocalPosition: {x: 2.4447336, y: 7.43309, z: -10.21235}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -14871,6 +14871,54 @@ PrefabInstance:
     - target: {fileID: 6039371719253742399, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458704414375648, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458704414375648, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458704414375648, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458704943195828, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458705342717779, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458705342717779, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458705342717779, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458705526823815, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458705526823815, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458705744499112, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458705744499112, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6315458706009658066, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6796476302123349380, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
