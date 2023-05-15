@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 
 public class MenuController : MonoBehaviour
 {
-    [SerializeField] private EventSystem _eventSystem;
+    //[SerializeField] private EventSystem _eventSystem;
 
     [Header("Volume Settings")]
     [SerializeField] private TextMeshProUGUI volumeTextValue = null;
@@ -23,8 +23,6 @@ public class MenuController : MonoBehaviour
 
     public void PlayGameYes()
     { //Level01'i yükle
-        DontDestroyOnLoad(_eventSystem);
-        
         SceneManager.LoadScene(levelToLoad);
     }
     public void ExitGameYes()
