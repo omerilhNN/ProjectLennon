@@ -16,8 +16,6 @@ namespace RPG.Attributes
         [SerializeField] UnityEvent<float> takeDamage;//When we take damage DamageText shows and slowly fades away by EVENT. Also, DamageTaken sFX played.
         [SerializeField] UnityEvent onDie;
 
-        [SerializeField] private GameObject restartGamePanel = null;
-
         LazyValue<float> _health;
 
         bool isDead = false;
@@ -92,9 +90,7 @@ namespace RPG.Attributes
             //GO is no longer available to move or attack due to that method down below.
             GetComponent<ActionScheduler>().CancelCurrentAction();
 
-            //Restart butonu çýksýn 
-            Time.timeScale = 0f;
-            restartGamePanel.SetActive(true);
+           
         }
         private void AwardExperience(GameObject instigator)
         {
@@ -108,11 +104,7 @@ namespace RPG.Attributes
             float regenHealthPoints = GetComponent<BaseStats>().GetStat(Stat.Health) * (regenerationPercentage /100);
             _health.value = Mathf.Max(_health.value, regenHealthPoints);
         }
-        public void ResetGame()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Time.timeScale = 1f;
-        }
+      
         public object CaptureState()
         {
             return _health.value;
