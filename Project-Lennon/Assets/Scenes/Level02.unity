@@ -310,6 +310,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 436332, guid: 47acc5b26852c45438ce84bf1364dea1, type: 3}
   m_PrefabInstance: {fileID: 37032934}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &69797588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4319486048276627609, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+  m_PrefabInstance: {fileID: 222391163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &76964325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1340190868663340389, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+  m_PrefabInstance: {fileID: 222391163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &76964326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5683456255604778613, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+  m_PrefabInstance: {fileID: 222391163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76964325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4984e2dc19340a40b4f051a267ac77d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &76964340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76964325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66121caf93d022344a9f701377132d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 76964326}
+  restartGamePanel: {fileID: 69797588}
 --- !u!1001 &83142853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -650,6 +685,14 @@ PrefabInstance:
     - target: {fileID: 4372163059972675812, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5047569200051525177, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 76964340}
+    - target: {fileID: 5047569200051525177, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RestartController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6315458706009658066, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
       propertyPath: m_IsActive
