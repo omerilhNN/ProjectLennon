@@ -1,0 +1,32 @@
+using RPG.Attributes;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class RestartController : MonoBehaviour
+{
+    [SerializeField] private Health health;
+    [SerializeField] private GameObject restartGamePanel = null;
+    private void Start()
+    {
+        health = GetComponent<Health>();
+       
+    }
+    private void Update()
+    {
+        if (health.IsDead())
+        {
+            //Restart butonu çýksýn ve oyun zamaný durdurulsun
+            Time.timeScale = 0f;
+            restartGamePanel.SetActive(true);
+        }
+    }
+
+    public void ResetGame()
+    {
+        //Level'ý yeniden yükleyip oyun zamanýný normal zamana döndersin.
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+    }
+}
