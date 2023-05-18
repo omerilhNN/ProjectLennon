@@ -4553,7 +4553,7 @@ PrefabInstance:
       objectReference: {fileID: 1193882241}
     - target: {fileID: 4189396043628733161, guid: c205bf5d61446cd49875f4a58d61b8ca, type: 3}
       propertyPath: patrolSpeedFraction
-      value: 0.4
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4810642605537716562, guid: c205bf5d61446cd49875f4a58d61b8ca, type: 3}
       propertyPath: m_Name
