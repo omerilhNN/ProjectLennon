@@ -16,10 +16,8 @@ public class RestartController : MonoBehaviour
     private void Update()
     {
         if (health.IsDead())
-        {
-            //Restart butonu çýksýn ve oyun zamaný durdurulsun
-            Time.timeScale = 0f;
-            restartGamePanel.SetActive(true);
+        { //Karakter öldüyse restart paneli belirli saniye sonunda aktifleþtir ve sonrasýnda oyun zamanýný durdur.
+            StartCoroutine(ResetPanel());
         }
     }
 
@@ -28,5 +26,12 @@ public class RestartController : MonoBehaviour
         //Level'ý yeniden yükleyip oyun zamanýný normal zamana döndersin.
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1f;
+    }
+    public IEnumerator ResetPanel()
+    {
+        yield return new WaitForSeconds(1f);
+        restartGamePanel.SetActive(true);
+        yield return new WaitForSeconds(0.75f);
+        Time.timeScale = 0f;
     }
 }
