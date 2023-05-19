@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
@@ -16,6 +17,7 @@ public class DialogManager : MonoBehaviour
     Actor[] currentActors;
     int activeMessage = 0;
     public static bool isActive = false;
+    public static bool isPlayed = false;
 
     public static DialogManager instance { get; private set; } //Singleton methot ile class dýþarýsýndan ulaþabilmeyi ayarladýk
     private void Awake()
@@ -51,14 +53,14 @@ public class DialogManager : MonoBehaviour
     public void NextMessage()
     {
         activeMessage++;
-        if (activeMessage < currentMessages.Length)
+        if (activeMessage < currentMessages.Length )
         {
             DisplayMessage();
         }
         else
         {
             Debug.Log("Conversation Ended");
-
+           
             //Scale'ini (0,0,0) yap, 0.5 saniye içerisinde.EaseInOutExpo daha yumuþak bir geçim için.
             backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
             isActive = false;
