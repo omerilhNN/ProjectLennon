@@ -25,6 +25,9 @@ namespace RPG.Movement
         }
         void Update()
         {
+            if (DialogManager.isActive == true)
+                navMeshAgent.enabled = false;
+
             navMeshAgent.enabled = !health.IsDead();//If player is dead then disable NMAgent.
 
             UpdateAnimator();
