@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainRegistration.unity
+    guid: b777f0a96fc795c49bc92feea53c20ab
+  - enabled: 1
+    path: Assets/Scenes/RegisterMenu.unity
+    guid: 7443242f9a60f2947b2e32b26e102fb3
+  - enabled: 1
+    path: Assets/Scenes/LoginMenu.unity
+    guid: ee751fc4cd726c9458ac24cfb0dbc15e
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 2f319ce778e43b544b16f83fbd4e24c7
   - enabled: 1
@@ -17,4 +26,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level03.unity
     guid: 63e0571a2ed2f2e4fafb5081717e9a15
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 51ca13c31150d344e9dc7214747a5e59, type: 2}
