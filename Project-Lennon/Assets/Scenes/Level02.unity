@@ -3030,7 +3030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1946381232674052830, guid: 22b82169598652948910dd5037aa5c01, type: 3}
       propertyPath: sceneToLoad
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4169759044325467309, guid: 22b82169598652948910dd5037aa5c01, type: 3}
       propertyPath: m_Size.x
@@ -5260,7 +5260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1946381232674052830, guid: 22b82169598652948910dd5037aa5c01, type: 3}
       propertyPath: sceneToLoad
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4169759044325467309, guid: 22b82169598652948910dd5037aa5c01, type: 3}
       propertyPath: m_Size.x
