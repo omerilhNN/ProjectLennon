@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 1545343270}
   - component: {fileID: 1545343269}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: PlayerDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,7 +846,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 166004768795501240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166004768931686512}
+        m_TargetAssemblyTypeName: MainDatabaseMenu, Assembly-CSharp
+        m_MethodName: GoToLogin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &166004768795501243
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -889,7 +901,7 @@ GameObject:
   - component: {fileID: 166004768795501240}
   - component: {fileID: 166004768795501241}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: LoginButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1012,6 +1024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c1c992adbe6016469f3d80760e10a7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDisplay: {fileID: 1545343269}
 --- !u!114 &166004769249016016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1140,7 +1153,7 @@ GameObject:
   - component: {fileID: 166004769249016016}
   - component: {fileID: 166004769249016017}
   m_Layer: 5
-  m_Name: Button
+  m_Name: RegisterButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1159,7 +1172,7 @@ GameObject:
   - component: {fileID: 166004769337298605}
   - component: {fileID: 166004769337298594}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Play Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1208,7 +1221,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 166004769337298605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 166004768931686512}
+        m_TargetAssemblyTypeName: MainDatabaseMenu, Assembly-CSharp
+        m_MethodName: GoToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &166004769337298595
 RectTransform:
   m_ObjectHideFlags: 0
