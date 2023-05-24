@@ -5,6 +5,7 @@ using RPG.Attributes;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.AI;
+using System.Collections;
 
 namespace RPG.Control
 {
@@ -27,6 +28,8 @@ namespace RPG.Control
         private void Awake()
         {
             health = GetComponent<Health>();
+
+            
         }
         void Update()
         {
