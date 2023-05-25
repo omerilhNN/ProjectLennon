@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -27,7 +28,7 @@ public class Login : MonoBehaviour
         if (www.text[0] == '0') //eðer text arrayinin ilk elementi 0 ise yani baþarýyla giriþ saðlandýðýnda
         {
             DBManager.username = nameField.text;
-            DBManager.score = int.Parse(www.text.Split('\t')[1]);
+            DBManager.score = float.Parse(www.text.Split('\t')[1]);
             SceneManager.LoadScene("MainRegistration");
         }
         else

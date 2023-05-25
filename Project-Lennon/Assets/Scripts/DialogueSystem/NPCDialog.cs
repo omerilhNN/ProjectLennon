@@ -9,11 +9,14 @@ public class NPCDialog : MonoBehaviour
     public GameObject endGamePanel;
 
     [SerializeField] GameObject player;
+    [SerializeField] Canvas pauseMenuCanvas;
     NavMeshAgent agent;
+    PauseMenu pauseMenu;
 
     private void Awake()
     {
         agent = player.GetComponent<NavMeshAgent>();
+        pauseMenu = pauseMenuCanvas.GetComponent<PauseMenu>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,8 +28,9 @@ public class NPCDialog : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.CompareTag("Player") == true && SceneManager.GetActiveScene().buildIndex == 3)
+        if(other.gameObject.CompareTag("Player") == true && SceneManager.GetActiveScene().buildIndex == 6)
         {
+            pauseMenu.CallSaveData();
             endGamePanel.SetActive(true);
             agent.enabled = false;
         }

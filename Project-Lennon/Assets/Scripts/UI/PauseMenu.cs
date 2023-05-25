@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            StartCoroutine(SavePlayerData());
             Time.timeScale = 0f;
             if (gameIsPaused)
             {
@@ -46,6 +47,29 @@ public class PauseMenu : MonoBehaviour
     }
     public void Quit()
     {
+        DBManager.LogOut();
         Application.Quit();
+    }
+    public void CallSaveData()
+    {
+        StartCoroutine(SavePlayerData());
+
+    }
+    IEnumerator SavePlayerData()
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("name", DBManager.username);
+        form.AddField("score", Convert.ToString(DBManager.score));
+
+        WWW www = new WWW("http://localhost/sqlconnect/savedata.php", form);
+        yield return www;
+        if (www.text == "0")
+        {
+            Debug.Log("Data saved");
+        }
+        else
+        {
+            Debug.Log("Save failed. Error #" + www.text);
+        }
     }
 }

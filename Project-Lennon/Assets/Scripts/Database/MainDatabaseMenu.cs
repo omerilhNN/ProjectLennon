@@ -7,13 +7,20 @@ using UnityEngine.UI;
 
 public class MainDatabaseMenu : MonoBehaviour
 {
+    public Button registerButton;
+    public Button loginButton;
+    public Button playButton;
+
     public TMP_Text playerDisplay;
     private void Start()
     {
         if(DBManager.LoggedIn)
         {
-            playerDisplay.text = "Player: " + DBManager.username;
+            playerDisplay.text = "Kullanici Adi: " + DBManager.username;
         }
+        registerButton.interactable = !DBManager.LoggedIn;
+        loginButton.interactable= !DBManager.LoggedIn;
+        playButton.interactable = DBManager.LoggedIn;
     }
     public void GoToRegister()
     {
