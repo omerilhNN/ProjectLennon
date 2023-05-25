@@ -26,7 +26,7 @@ namespace RPG.Stats
 
             onExperienceGained(); //We already added a delegate to that Action in BaseStats script.
         }
-        public void CallSaveData()
+      /*  public void CallSaveData()
         {
             StartCoroutine(SavePlayerData());
         }
@@ -47,8 +47,8 @@ namespace RPG.Stats
                 Debug.Log("Save failed. Error #" + www.text);
             }
             DBManager.LogOut();
-            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
-        }
+            
+        }*/
         public float GetPoints()
         {
             return experiencePoints;

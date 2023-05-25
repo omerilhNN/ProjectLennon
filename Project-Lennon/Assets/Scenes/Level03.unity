@@ -9689,6 +9689,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4612329036020226, guid: e1032c9b5d7d362489670d42997dceb5, type: 3}
   m_PrefabInstance: {fileID: 1757231899}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &1783108484 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6315458704943195825, guid: f28a694d6869e1b459009e911fbb65d6, type: 3}
+  m_PrefabInstance: {fileID: 4372163060136800643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1796454080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12712,6 +12717,10 @@ PrefabInstance:
       propertyPath: endGamePanel
       value: 
       objectReference: {fileID: 811406625}
+    - target: {fileID: 3658046230111755584, guid: 42a3743bbc7c18d4dbac9df6a7fade26, type: 3}
+      propertyPath: pauseMenuCanvas
+      value: 
+      objectReference: {fileID: 1783108484}
     - target: {fileID: 3658046230111755590, guid: 42a3743bbc7c18d4dbac9df6a7fade26, type: 3}
       propertyPath: endGamePanel
       value: 
