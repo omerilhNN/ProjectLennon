@@ -26,29 +26,6 @@ namespace RPG.Stats
 
             onExperienceGained(); //We already added a delegate to that Action in BaseStats script.
         }
-      /*  public void CallSaveData()
-        {
-            StartCoroutine(SavePlayerData());
-        }
-        IEnumerator SavePlayerData()
-        {
-            WWWForm form = new WWWForm();
-            form.AddField("name", DBManager.username);
-            form.AddField("score", Convert.ToString(DBManager.score));
-
-            WWW www = new WWW("http://localhost/sqlconnect/savedata.php", form);
-            yield return www;
-            if (www.text == "0")
-            {
-                Debug.Log("Data saved");
-            }
-            else
-            {
-                Debug.Log("Save failed. Error #" + www.text);
-            }
-            DBManager.LogOut();
-            
-        }*/
         public float GetPoints()
         {
             return experiencePoints;
