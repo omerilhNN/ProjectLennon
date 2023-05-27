@@ -16,7 +16,7 @@ public class veriGetir : MonoBehaviour
     {
         WWWForm form = new WWWForm();
         form.AddField("komut", "veriCekme");
-        string url = "http://localhost/scoreboard.php";
+        string url = "http://localhost/sqlconnect/scoreboard.php";
         WWW w = new WWW(url, form);
         yield return w;
         gelen_veriler = w.text.Split(';');
