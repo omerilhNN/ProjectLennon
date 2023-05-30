@@ -30,8 +30,14 @@ public class MainDatabaseMenu : MonoBehaviour
     {
         SceneManager.LoadScene("LoginMenu");
     }
+    
     public void GoToGame()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
