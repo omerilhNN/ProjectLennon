@@ -38,6 +38,6 @@ public class Login : MonoBehaviour
     }
     public void VerifyInputs()
     {
-        submitButton.interactable = (nameField.text.Length >= 6 && passwordField.text.Length >= 6);
+        submitButton.interactable = (passwordField.text.Length >= 6);
     }
 }
