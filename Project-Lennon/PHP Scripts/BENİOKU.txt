@@ -1,0 +1,5 @@
+    PHP kodlarının bilgisayarınızda MAMP'ın kurulu olduğu
+dosya içerisinde "C:\MAMP\htdocs\sqlconnect" konumuna kopyalanması gerekmektedir.
+    Oyunun sorunsuz çalışması için ise phpMyAdmin üzerinden yapmış olduğumuz
+tabloların aynı şekilde düzenlenmiş olması gerekmektedir.
+
